@@ -13,8 +13,9 @@ function dS(x, s, u)
     mu = (a*s)./(b.+s)
     return (u*(s_in-s))-sum(mu.*(x./Y))
 end
-# Simpson index 
-function S(x)
+
+# Simpson index S=1-D
+function D(x)
     N = sum(x)^2
     return sum((x.^2))/N
 end
